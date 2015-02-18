@@ -5,7 +5,7 @@ PostApp is a simple blog post app with the following models and properties:
 - Users # have name, city
 - Posts # have an author, title, content, timestamps
 - Images # have a parent post
-- Comments # a nested/threaded list of comments (a comment has children comments / children comment threads)
+- Comments # a nested/threaded list (a comment can have children comments & threads)
 
 Please create a fresh rails app, and JSON API endpoints for the following cases.
 
