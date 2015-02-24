@@ -1,4 +1,4 @@
-## PostApp test
+## PostApp API test
 
 PostApp is a simple blog post app with the following models and properties:
 
@@ -7,7 +7,7 @@ PostApp is a simple blog post app with the following models and properties:
 - Images # have a parent post
 - Comments # a nested/threaded list (a comment can have children comments & threads)
 
-Please create a fresh rails app with JSON API endpoints for the following cases:
+Please create a fresh rails app and implement the JSON API endpoints for the following cases:
 
 #### Posts
 
