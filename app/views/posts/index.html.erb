@@ -2,8 +2,6 @@
 
 <h4><%= link_to "Create a Post", new_post_path %></h4>
 
-<ul>
 <% @posts.all.each do |post| %>
-  <li><%= link_to post.title, post_path(post) %></li>
+  <div><%= link_to post.title, post_path(post) %></div>
 <% end %>
-</ul>
