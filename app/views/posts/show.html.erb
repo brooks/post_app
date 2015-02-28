@@ -1,0 +1,7 @@
+<h1><%= @post.title %></h1>
+<label>Date: <%= @post.created_at.strftime("%b %d %Y") %></label>
+<label>Author: <%= @post.author.name %></label>
+<p><%= @post.content %></p>
+
+<%= link_to 'Edit Post', edit_post_path(@post) %>
+<%= link_to 'Destroy Post',  @post,  method: :delete, data: { confirm: 'Are you sure?' } %>
