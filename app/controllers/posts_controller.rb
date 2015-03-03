@@ -1,11 +1,11 @@
 class PostsController < ApplicationController
   
   def index
-    @posts = Post.all
+    render json: Post.all
   end
 
   def show
-    @post = Post.find(params[:id])
+    render json: Post.find(params[:id])
   end
 
   def new
@@ -42,7 +42,8 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :image)
+    json_params = ActionController::Parameters.new( JSON.parse(request.body.read) )
+    json_params.require(:post).permit(:title, :content, :image)
   end
 
 end
